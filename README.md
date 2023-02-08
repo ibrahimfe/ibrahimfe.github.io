@@ -1,5 +1,4 @@
-# ibrahimfe.github.io
-Welcome to My Portfolio Website
+# Welcome to My Portfolio Website
 
 This portfolio website showcases my passion for coding and my experience in software development. I am a student who loves to explore new technologies and continuously learning new programming languages.
 Blog
@@ -16,3 +15,5 @@ Contact Me
 If you would like to get in touch with me, please feel free to reach out to me via email. You can find my contact information in the 'Contact' section of my portfolio website. I look forward to hearing from you!
 
 I hope that my portfolio website provides a glimpse into my passion for coding and my experience in software development. Thank you for visiting my portfolio!
+
+# ibrahimfe.github.io
