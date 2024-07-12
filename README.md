@@ -1,61 +1,38 @@
-# Chirpy Starter
+# Portfolio Website
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+## Introduction
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+Welcome to my portfolio website! This site serves as a showcase of my work, skills, and experiences as a software engineer. It is built using the Chirpy theme, a beautiful and modern Jekyll theme, and hosted on GitHub Pages. I wanted to create a space where I could display my projects, share my thoughts, and connect with others in the industry.
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+## Technologies Used
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+- **Jekyll**: A static site generator that transforms plain text into static websites. Jekyll makes it easy to create and manage content, and is perfect for building simple, fast, and secure websites.
+- **Chirpy** Theme: A stylish and feature-rich Jekyll theme that provides a clean and elegant design. Chirpy offers a responsive layout, easy customization, and a host of features such as dark mode, syntax highlighting, and SEO optimization.
+- **GitHub Pages**: A hosting service offered by GitHub that allows you to host static websites directly from your GitHub repository. It provides a simple and free way to get your website online and accessible to the world.
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
-```
+## Features
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+- **Project Showcase**: A dedicated section to display my past and current projects, including descriptions, images, and links to live demos or code repositories.
+- **Blog**: A platform for me to share my thoughts, tutorials, and industry insights. I plan to regularly update this section with new content, providing valuable resources for fellow developers.
+- **About Me**: A personal introduction, highlighting my skills, experiences, and passions. This section gives visitors a glimpse into my background and what drives me as a software engineer.
+- **Contact**: An easy way for visitors to get in touch with me. I've included links to my social media profiles and provided a contact form for direct messages.
 
-## Prerequisites
+## Setup and Customization
 
-Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of
-the basic environment. [Git](https://git-scm.com/) also needs to be installed.
+To set up and customize this website, simply fork this repository and follow the steps below:
 
-## Installation
+1. Install Jekyll and any necessary dependencies on your machine.
+2. Clone your forked repository and navigate to the project folder.
+3. Run jekyll serve to start the local development server.
+4. Open your browser and visit http://localhost:4000 to view your website.
+5. Customize the site to your liking by editing the \_config.yml file and modifying the content in the \_posts and \_projects folders.
+6. Once you're happy with your changes, commit and push your updates to your forked repository.
+7. Enable GitHub Pages in your repository settings to publish your website.
 
-Sign in to GitHub and [**use this template**][use-template] to generate a brand new repository and name it
-`USERNAME.github.io`, where `USERNAME` represents your GitHub username.
+## Credits
 
-Then clone it to your local machine and run:
+    - Chirpy Theme: https://github.com/cotes2020/jekyll-theme-chirpy
+    - Jekyll: https://jekyllrb.com/
+    - GitHub Pages: https://pages.github.com/
 
-```console
-$ bundle
-```
-
-## Usage
-
-Please see the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy#documentation).
-
-## Contributing
-
-The contents of this repository are automatically updated when new releases are made to the [main repository][chirpy].  
-If you have problems using it, or would like to participate in improving it, please go to the main repository for feedback!
-
-## License
-
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[use-template]: https://github.com/cotes2020/chirpy-starter/generate
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+Thank you for visiting my portfolio website! I hope it provides inspiration and resources for your own projects. Feel free to reach out if you have any questions or feedback. Happy coding!
