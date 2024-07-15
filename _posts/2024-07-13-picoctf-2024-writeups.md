@@ -41,6 +41,20 @@ After launching the instance and list all the files and folder with `ls`, inside
 
     467a10447deb3d4e17634cacc2a68ba6c2bb62a6637dad9145ea673bf0be5e02
 
-the challennges wants us to verify the correct hash file with this hash string. so using the linux terminal i use `sha256sum files/*` to list all of the hash string inside the `files/` folder. To match the hash string in the checksum.txt pipe the output of `sha256sum files/*` use `grep`, and it will look like this `sha256sum files/* | grep <hash string>`. switch the <hash string> with the actual hash string and it will show the actual file which is `c6c8b911`. type `./decrypt.sh files/c6c8b911` and it will output the actual flag.
+the challennges wants us to verify the correct hash file with this hash string. so using the linux terminal i use `sha256sum files/*` to list all of the hash string inside the `files/` folder. To match the hash string in the checksum.txt pipe the output of `sha256sum files/*` use `grep`, and it will look like this `sha256sum files/* | grep <hash string>`. switch the `hash string` with the actual hash string and it will show the actual file which is `c6c8b911`. type `./decrypt.sh files/c6c8b911` and it will output the actual flag.
 
 Flag : **picoCTF{trust_but_verify_c6c8b911}**
+
+## Scan Surprise [Forensics]
+
+**Challenge Description** : I've gotten bored of handing out flags as text. Wouldn't it be cool if they were an image instead? You can download the challenge files here:
+
+[Challenge.zip](https://artifacts.picoctf.net/c_atlas/1/challenge.zip)
+
+- Hint 1 : QR codes are a way of encoding data. While they're most known for storing URLs, they can store other things too.
+- Hint 2 : Mobile phones have included native QR code scanners in their cameras since version 8 (Oreo) and iOS 11
+- Hint 3 : If you don't have access to a phone, you can also use zbar-tools to convert an image to text
+
+Literally scan the file and you will get the flag.
+
+Flag : **picoCTF{p33k_@_b00_3f7cf1ae}**
