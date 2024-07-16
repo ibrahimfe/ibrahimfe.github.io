@@ -58,3 +58,36 @@ Flag : **picoCTF{trust_but_verify_c6c8b911}**
 Literally scan the file and you will get the flag.
 
 Flag : **picoCTF{p33k_@_b00_3f7cf1ae}**
+
+
+## Binary Search [General Skills]
+
+**Description** : Want to play a game? As you use more of the shell, you might be interested in how they work! Binary search is a classic algorithm used to quickly find an item in a sorted list. Can you find the flag? You'll have 1000 possibilities and only 10 guesses. Cyber security often has a huge amount of data to look through - from logs, vulnerability reports, and forensics. Practicing the fundamentals manually might help you in the future when you have to write your own tools! You can download the challenge files here:
+
+- [challenge.zip](https://artifacts.picoctf.net/c_atlas/4/challenge.zip)
+
+Hints
+1. Have you ever played hot or cold? Binary search is a bit like that.
+2. You have a very limited number of guesses. Try larger jumps between numbers!
+3. The program will randomly choose a new number each time you connect. You can always try again, but you should start your binary search over from the beginning - try around 500. Can you think of why?
+
+**How i solved it**
+The strategy to solve this challenge is to always guess in the middle of a number. For example you start with 500, if lower try 250, if higher try 750. Continue doing this strategy until the 7th or 8th guess. Now you can try you lucky day in the 9th and 10th guesses.
+
+Flag : **picoCTF{g00d_gu355_ee8225d0}**
+
+## WebDecode [Web Exploitation]
+
+**Description** 
+Do you know how to use the web inspector?
+Start searching [here](http://titan.picoctf.net:51924/) to find the flag
+
+Hints:
+1. Use the web inspector on other files included by the web page.
+2. The flag may or may not be encoded
+
+**How i solved it**
+I inspect all of the 3 html page and found a suspicious string in about.html page. It looks something like this `cGljb0NURnt3ZWJfc3VjYzNzc2Z1bGx5X2QzYzBkZWRfMWY4MzI2MTV9`. So i open up the [cyberchef.org](https://cyberchef.org), put the string in the input box and use **Base64** recipe to decode the string. 
+
+
+Flag : **picoCTF{web_succ3ssfully_d3c0ded_1f832615}**
