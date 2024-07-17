@@ -91,3 +91,35 @@ I inspect all of the 3 html page and found a suspicious string in about.html pag
 
 
 Flag : **picoCTF{web_succ3ssfully_d3c0ded_1f832615}**
+
+## Unminify [Web Exploitation]
+
+**Description**
+I don't like scrolling down to read the code of my website, so I've squished it. As a bonus, my pages load faster!
+
+**Hints**
+1. Try CTRL+U / ⌘+U in your browser to view the page source. You can also add 'view-source:' before the URL, or try `curl <URL>` in your shell.
+2. Minification reduces the size of code, but does not change its functionality.
+3. What tools do developers use when working on a website? Many text editors and browsers include formatting
+
+**How i Solved It**
+After i connected to the instance and open the webpage, and open the page source with the rigth click. After that i use CTRL + F to search the keyword picoCTF{} to find the flag. And there you go.
+
+Flag : **picoCTF{pr3tty_c0d3_b99eb82e}**
+
+## Super SSH [General Skills]
+
+**Description**
+Using a Secure Shell (SSH) is going to be pretty important.
+Can you ssh as ctf-player to titan.picoctf.net at port 64549 to get the flag? You'll also need the password 1ad5be0d. If asked, accept the fingerprint with yes. If your device doesn't have a shell, you can use: [PicoCTF Webshell](https://webshell.picoctf.org) If you're not sure what a shell is, check out our Primer: [Primer PicoCTF](https://primer.picoctf.com/#_the_shell)
+
+**Hints**
+1. [man ssh](https://linux.die.net/man/1/ssh)
+2. You can try logging in 'as' someone with `<user>`@titan.picoctf.net
+3. How could you specify the port?
+4. Remember, passwords are hidden when typed into the shell
+
+**How I Solved It**
+Connect to the ssh with `ssh ctf-player@titan.picoctf.net -p 64549`. Put the password given and you will get the flag.
+
+Flag : **picoCTF{s3cur3_c0nn3ct10n_8306c99d}**
