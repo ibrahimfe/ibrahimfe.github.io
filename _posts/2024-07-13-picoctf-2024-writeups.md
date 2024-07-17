@@ -88,7 +88,7 @@ Flag : **picoCTF{g00d_gu355_ee8225d0}**
 
 **Description** 
 Do you know how to use the web inspector?
-Start searching [here](http://titan.picoctf.net:51924/) to find the flag
+Start searching here to find the flag
 
 **Hints**
 1. Use the web inspector on other files included by the web page.
