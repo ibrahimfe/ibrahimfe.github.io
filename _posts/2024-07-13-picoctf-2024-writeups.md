@@ -244,6 +244,6 @@ How about some hide and seek? Download this file [here](https://artifacts.picoct
 
 **How i solved it**
 
-We get a jpg file with nothing suspicious inside. So using `exiftool` to extract the metadata of the file and we can see there is a suspicious string, `cGljb0NURntNRTc0RDQ3QV9ISUREM05fZGVjYTA2ZmJ9Cg==` that looks like a base64 encoding in Attribution URL. Using [cyberchef.org](cyberchef.org) tool we can decode the string and we will get the flag.
+We get a jpg file with nothing suspicious inside. So using `exiftool` to extract the metadata of the file and we can see there is a suspicious string, `cGljb0NURntNRTc0RDQ3QV9ISUREM05fZGVjYTA2ZmJ9Cg==` that looks like a base64 encoding in Attribution URL. Using [cyberchef.org](https://cyberchef.org) tool we can decode the string and we will get the flag.
 
 Flag : **picoCTF{ME74D47A_HIDD3N_deca06fb}**
