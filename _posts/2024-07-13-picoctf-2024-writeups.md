@@ -247,3 +247,46 @@ How about some hide and seek? Download this file [here](https://artifacts.picoct
 We get a jpg file with nothing suspicious inside. So using `exiftool` to extract the metadata of the file and we can see there is a suspicious string, `cGljb0NURntNRTc0RDQ3QV9ISUREM05fZGVjYTA2ZmJ9Cg==` that looks like a base64 encoding in Attribution URL. Using [cyberchef.org](https://cyberchef.org) tool we can decode the string and we will get the flag.
 
 Flag : **picoCTF{ME74D47A_HIDD3N_deca06fb}**
+
+----------
+
+## Blame Game [General Skills]
+
+**Description**
+
+Someone's commits seems to be preventing the program from working. Who is it? You can download the challenge files here:
+
+[challenge.zip](https://artifacts.picoctf.net/c_titan/159/challenge.zip)
+
+**Hints**
+
+1. In collaborative projects, many users can make many changes. How can you see the changes within one file?
+2. Read the chapter on Git from the picoPrimer [here](https://primer.picoctf.org/#_git_version_control).
+3. You can use `python3 <file>.py` to try running the code, though you won't need to for this challenge.
+
+**How i solved it**
+
+There is a blame method to see who's the author and changes made in the last commit, and it matches the challenge name **Blame Game**. So using `git blame message.py` we can see the message that contain the flag.
+
+Flag : **picoCTF{@sk_th3_1nt3rn_81e716ff}**
+
+----------
+
+## binhexa [General Skills]
+
+**Description**
+
+How well can you perfom basic binary operations?
+Start searching for the flag here `nc titan.picoctf.net 52330`
+
+**Hints**
+
+1. None
+
+**How i solved it**
+
+use an online calculator like [rapidtables.com](https://rapidtables.com/calc/math/binary-calculator.html) and you are good to go.
+
+Flag : **picoCTF{b1tw^3se_0p3eR@tI0n_su33essFuL_aeaf4b09}**
+
+Hope you are find this blog usefull :)
